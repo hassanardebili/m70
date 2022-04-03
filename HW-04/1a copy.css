@@ -1,0 +1,42 @@
+.line1{
+    display: flex;
+    background-color: greenyellow;
+    
+    justify-content: center;
+}
+.line2 {
+    display: flex;
+}
+.child1 {
+   
+    display: flex;
+    background-color:blueviolet;
+    align-items: baseline;
+   
+}
+.child2 {
+   
+    display: flex;
+    background-color:rgb(43, 226, 180);
+    align-items: baseline;
+    
+}
+.child3 {
+   
+    display: flex;
+    background-color:rgb(43, 226, 104);
+    align-items: baseline;
+   
+.line3 {
+    display: flex;
+
+}
+.ch1{
+    display: flex;
+    background-color:rgb(223, 226, 43);
+    align-items: baseline;
+    width: 100%;
+    height: 100px;
+
+
+}

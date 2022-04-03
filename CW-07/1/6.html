@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="tabtab" border="1">
+        <tr>
+            <th>fname</th>
+            <th>lname</th>
+            <th>phone</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            <td>
+                <input type="button" value="button" onclick="addtotable()">
+            </td>
+        </tr>
+    </table>
+    <script>
+        let inputs=document.querySelectorAll('input')
+
+        function addtotable(){
+            let tr =document.createElement('tr')
+            for(let i=0;i<3;i++){
+                let td = document.createElement('td')
+                td.innerText=inputs[i].value
+                tr.appendChild(td)
+            }
+            let tddel = document.createElement('td')
+            let button =document.createElement('button')
+            button.addEventListener('click',function() {
+                button.parentElement.parentElement.remove()
+            })
+            button.innerText = 'delete'
+            tddel.appendChild(button)
+            tr.appendChild(tddel)
+            
+            let table = document.getElementById('tabtab')
+            table.appendChild(tr)
+        }
+    </script>
+</body>
+</html>

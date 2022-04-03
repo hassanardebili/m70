@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="text" />
+    <p id="rev"></p>
+
+    <script>
+        function reverseS(str) {
+          const array = str.split('').reverse().join('');
+          return array;
+        }
+    //   function reverseS(myvariable) {
+    //     return myvariable.split('').reverse().join('');
+    //   }
+      var str = document.getElementById("text");
+
+      let p = document.getElementById("rev");
+      str.addEventListener("keyup", function (e) {
+        val = str.value;
+        p.innerText = val;
+        p.innerText = reverseS(p.innerText);
+      });
+    </script>
+  </body>
+</html>

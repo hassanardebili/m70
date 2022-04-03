@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">input</label>
+        <input id="input1" type="text">
+        <input type="button" value="submit" onclick="counter()">
+    </form>
+    <p id="p1"></p>
+    <script>
+    
+const seda = ["a", "e", "i", "o", "u"]
+//abea
+function count(str) {
+    let count = 0;
+    for (let letter of str.toLowerCase()) {
+        if (seda.includes(letter)) {
+            count++;
+        }
+    }
+    return count
+}
+function counter(){
+const str1 = document.getElementById('input1').value;
+const result = count(str1);
+document.getElementById('p1').innerText=result;
+
+}
+
+// const str1 = document.getElementById('input1').value;
+// const result = count(str1);
+// document.write(result);
+    </script>
+</body>
+</html>

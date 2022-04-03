@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="pbook.php" method="post">
+      <div>
+        <label for="fname">Firstname</label>
+        <input type="text" name="fname" id="fname" />
+      </div>
+      <div>
+        <label for="lname">Lastname</label>
+        <input type="text" name="lname" id="lname" />
+      </div>
+      <div>
+        <label for="tel">Telephone</label>
+        <input type="tel" name="tel" id="tel" />
+      </div>
+      <div>
+        <label for="gender"></label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div>
+        <textarea name="details" id="details" cols="30" rows="10"></textarea>
+      </div>
+      <div id="remain"></div>
+      <input type="checkbox" id="agree">are u sure?
+      <div>
+        <button disabled type="submit" name="submit" value="submit" id="submit">Submit</button>
+      </div>
+    </form>
+    <script>
+      $(function () {
+        $("#agree").change(function () {
+          if ($(this).is(":checked")) {
+            $("#submit").removeAttr("disabled");
+          } else {
+            $("#submit").attr("disabled", "disabled");
+          }
+        });
+        // $("form").submit(function (e) {
+        //   e.preventDefault();
+        //   let data = [];
+        //   $("form :input").slice().each
+        // });
+
+        let fname = $("#fname").val();
+        let lname = $("#lname").val();
+        let tel = $("#tel").val();
+        let gender = $("#gender").val();
+        let detail = $("#detail").val();
+
+        const data = {
+          fname,
+          lname,
+          tel,
+          gender,
+          detail,
+        };
+
+        $.ajax({
+          url: "pbook.php",
+          data,
+          success: function (result) {
+            console.log(result);
+          },
+          error: function (erorr) {
+            console.error(err);
+          },
+        });
+        var m_length = 100;
+        $("textarea").keyup(function () {
+          var len = m_length - $(this).val().length;
+          $(".remain").text(len);
+          if (len < 0) {
+            $(".remain").css("color", "red");
+          } else {
+            $(".remain").css("color", "black");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

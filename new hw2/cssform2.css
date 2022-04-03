@@ -1,0 +1,49 @@
+.rows{
+display: block;
+width: 1080px;
+
+}
+.col1{
+    width: 270px;
+    display: inline-block;
+    
+}
+.col1 input{
+    padding-left: 50px;
+}
+.col2{
+    width: 500px;
+    display: inline-block;
+}
+.col2 input{
+    padding-left: 100px;
+    
+}
+.col3{
+    width: 400px;
+    display: inline-block;
+}
+label{
+    display: block;
+}
+input{
+    display: inline-block;
+}
+.radio{
+    margin-right: 100px;
+
+}
+.esm{
+    display: inline-block;
+    width: 200px;
+}
+.col4 input{
+    padding-left: 100px;
+}
+.col4{
+    width: 500px;
+    display: inline-block;
+}
+input{
+    background-color: rgb(192, 192, 192);
+}

@@ -1,0 +1,33 @@
+table{
+    
+    margin: auto;
+    width: 500px;
+    text-align: left;
+    border: 1px solid silver;
+    border-collapse: collapse;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sotonzoje{
+    width: 70%;
+}
+.sotonfard{
+    width: 30%;
+}
+.satrezoje{
+    background: rgb(77, 82, 78);
+    margin: left 10px silver;
+    color: rgb(21, 205, 238);
+}
+.satrefard{
+    background-color:rgba(0, 255, 64, 0.692);
+    color:rgb(22, 88, 53);
+    border: 1px solid silver;
+
+}
+th{
+    background-color: rgb(69, 190, 12);
+    color: white;
+}
+.akhar{
+    border: 1px solid silver;
+}

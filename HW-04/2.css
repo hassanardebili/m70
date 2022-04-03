@@ -1,0 +1,27 @@
+div{
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    color: aqua;
+}
+.total{
+    display: grid;
+    background-color: rgb(0, 0, 0);
+    grid-template-columns: repeat(12,1fr);
+    gap: 5px;
+
+}
+.number1{
+    grid-column: 1/-1;
+}
+.number2{
+    grid-column: auto / span 6;
+}
+.number3{
+    grid-column: auto / span 4;
+}
+.number4{
+    grid-column: auto / span 3;
+}
+.number5{
+    grid-column: auto / span 2;
+}

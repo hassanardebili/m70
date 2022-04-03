@@ -1,0 +1,31 @@
+.body{
+    width: 1000px;
+    direction: rtl;
+}
+.header{
+    display:flex;
+    justify-content: start;
+    background-color: rgb(76, 155, 155);
+}
+.sar{
+    display: block;
+    margin:auto;
+}
+.middel{
+}
+label{
+    width: 100px;
+
+}
+input{
+    width: 200px;
+    margin-right: 30px;
+}
+.buttom{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.buttom div p{
+    display: flex;
+}

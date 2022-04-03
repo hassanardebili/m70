@@ -1,0 +1,17 @@
+.parent{
+    display: flex;
+    gap: 16px;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    width: 220px;
+}
+
+.child{
+    display: flex;
+    background-color:blueviolet;
+    align-items: baseline;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}

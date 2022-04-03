@@ -1,0 +1,40 @@
+
+.parent{ 
+    display: flex;
+    gap: 10px;
+    width: 250px;
+    flex-wrap: wrap;
+
+
+}
+.child{ 
+    display: flex;
+    background-color: gray;
+    width: 100px;
+    justify-content: baseline;
+
+    
+}
+.childparent{
+    display: flex;
+    gap: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    flex-wrap: wrap;
+}
+.child2{
+display: flex;
+background-color:aqua;
+width: 100%;
+
+
+
+}
+.childli{
+    display: flex;
+    gap: 16px;
+    width: 20px;
+    height: 20px;
+
+}
